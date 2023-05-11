@@ -12,7 +12,7 @@ namespace WebApp.Areas.Admin.Controllers
         {
             _roleManager = roleManager;
         }
-
+             
         public IActionResult Index()
         {
             var roles = _roleManager.Roles.ToList();

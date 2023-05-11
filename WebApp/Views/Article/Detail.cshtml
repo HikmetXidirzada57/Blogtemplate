@@ -1,7 +1,5 @@
 ﻿@model DetailVM
 
-
-
 <section class="section single-wrapper">
     <div class="container">
         <div class="row">
@@ -17,7 +15,6 @@
                         <span class="color-orange"><a href="tech-category-01.html" title="">@Model.Article.Category.Name</a></span>
 
                         <h3>@Model.Article.Title</h3>
-
                         <div class="blog-meta big-meta">
                             <small><a href="tech-single.html" title="">@Model.Article.CreatedDate.ToString("dd MM yyyy")</a></small>
                             <small><a href="tech-author.html" title="">by @Model.Article.User.Name</a></small>
@@ -90,6 +87,7 @@
                                 </div>
                                 <!-- end col -->
                             }
+
                             @if (Model.After != null)
                             {
                                 <div class="col-lg-6">

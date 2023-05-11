@@ -72,7 +72,7 @@ namespace WebApp.Areas.Admin.Controllers
             var userId = _contextAccessor.HttpContext.User.FindFirst(ClaimTypes.NameIdentifier).Value;
             User user = await _userManager.FindByIdAsync(userId);
 
-            return View(user);
+            return View(user);  
         }
 
 
